@@ -3,6 +3,7 @@
   <head>
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <nav id="nav-menu">
@@ -57,8 +58,8 @@
         <div class="project-card">
           <img src="project2.png" alt="Project 2">
           <h3 class="project-title">Project 2</h3>
-          <p class="project-description">Description of Project 2</p>
-          <p class="project-tech-stack">Tech Stack used      : HTML, CSS, JavaScript</p>
+          <p       class="project-description">Description of Project 2</p>
+      <p class="project-tech-stack">Tech Stack used: HTML, CSS, JavaScript</p>
       <a class="project-github-link" href="https://github.com/project2" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
       <a class="project-deployed-link" href="#" target="_blank" rel="noopener noreferrer">Deployed Link or Video Link</a>
     </div>
@@ -82,5 +83,37 @@
   </div>
 </section>
 <div class="react-activity-calendar"></div>
+
+<script>
+  // Responsive navbar
+  const navMenu = document.getElementById('nav-menu');
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+
+  // Smooth scrolling for links
+  const scrollLinks = document.querySelectorAll('a[href^="#"]');
+  scrollLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(link.getAttribute('href'));
+      target.scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Github activity calendar
+  new GitHubCalendar('.react-activity-calendar', 'yourusername');
+</script>
 </body>
 </html>
