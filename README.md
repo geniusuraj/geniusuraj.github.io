@@ -1,2 +1,0 @@
-
-# geniusuraj.github.io

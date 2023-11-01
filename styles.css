@@ -1,0 +1,417 @@
+/* styles.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #141414;
+  position: relative;
+}
+
+#user-detail-intro {
+  margin: 30px;
+}
+
+#resume-button-2 {
+  scale: 1.2;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  align-items: center;
+}
+
+nav a,
+#resume-button-2 > a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover,
+#resume-button-2 > a:hover {
+  background-color: #e50914;
+  color: #000;
+}
+
+#resume-button-2 {
+  background-color: transparent;
+  border: none;
+}
+
+#resume-button-2 a {
+  background-color: #141414;
+}
+
+.home-img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 2rem auto;
+}
+
+#typed-text {
+  color: #e50914;
+  font-weight: 700;
+  font-style: initial;
+}
+
+#about,
+.skills-card,
+.project-card {
+  background-color: #222;
+  padding: 1rem;
+  /* margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem; */
+}
+
+#github-sec {
+  margin: 1rem;
+  background-color: #222;
+  padding-bottom: 50px;
+}
+
+#github-sec h2 {
+  padding: 20px;
+}
+
+.section-header {
+  padding-bottom: 15px !important;
+}
+#about > p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+.about-skills {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.about-skills > section {
+  flex: 1;
+  /* text-align: center; */
+  text-align: justify;
+  /* line-break: loose; */
+}
+
+.skill-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* flex-direction: column; */
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.skills-card {
+  min-height: 200px;
+}
+
+.skill-section img {
+  width: 60px;
+}
+.skill-section p {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+#theme-toggle {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#about > h2 {
+  padding: 0;
+  margin: 0;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card {
+  margin: 1rem;
+  display: flex;
+  gap: 40px;
+}
+
+.project-image {
+  flex: 2;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.project-desc {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-tech-stack {
+  font-size: 16px;
+  font-weight: 700;
+  width: 80%;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.project-links a {
+  background-color: black;
+  padding: 10px 20px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.project-links a:hover {
+  background-color: #e50914;
+  color: white;
+}
+
+.project-description {
+  /* height: 100%; */
+  /* margin: auto; */
+  text-align: justify;
+  line-height: 25px;
+  width: 80%;
+}
+/* .github{
+    display: flex;
+    flex-direction: column;
+} */
+
+.project-links .git-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.github-stats a img {
+  width: 100%;
+  height: auto;
+}
+
+.github-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  /* padding: 2%; */
+}
+
+#github-top-langs {
+  width: 100%;
+  height: 195px;
+}
+
+#git-stats-calender {
+  display: flex;
+  width: 90%;
+}
+
+#git-stats-calender img {
+  width: 100%;
+  padding: 0 5%;
+}
+
+#contact {
+  padding-bottom: 100px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.contact-links {
+  font-size: 24px;
+}
+
+.contact-links i {
+  padding: 0 15px;
+}
+
+.contact-links a {
+  padding: 15px 0;
+  color: white;
+  transition: all 0.3s;
+}
+.contact-links a:hover {
+  color: #e50914;
+}
+
+.wc-msg {
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+.contact-div {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-links,
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: rgb(97, 96, 96);
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  color: rgb(255, 255, 255);
+  resize: none;
+  margin: 10px 0;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #e50914;
+}
+
+form button {
+  background-color: #141414;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  width: fit-content;
+  border-radius: 20px;
+  font-size: 16px;
+  transition: all 0.3s;
+  align-self: center;
+  margin: 10px;
+}
+
+form button:hover {
+  background-color: #e50914;
+}
+.end {
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  #home {
+    margin-top: 100px;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: -50px;
+    left: -45px;
+    width: 100%;
+    background-color: #141414;
+    gap: 15px;
+    z-index: 10;
+  }
+
+  nav li {
+    background-color: #e50914;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    width: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 12px; */
+  }
+
+  nav.active ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .menu-toggle {
+    display: block;
+  }
+  .project-card {
+    flex-direction: column;
+  }
+  .about-skills {
+    flex-direction: column;
+  }
+  .project-tech-stack {
+    width: 100%;
+  }
+  .project-description {
+    width: 100%;
+  }
+
+  .project-links {
+    width: 100%;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  top: -80px;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
