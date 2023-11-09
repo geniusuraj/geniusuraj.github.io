@@ -346,16 +346,42 @@ form button:hover {
   text-align: center;
   padding-bottom: 40px;
 }
+
+.menu-toggle {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 15;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   #home {
     margin-top: 100px;
   }
+
+  .menu-toggle {
+    display: block; /* Show the hamburger menu on mobile */
+    /* Other styles remain the same */
+  }
+  nav {
+    position: fixed; /* Add this line to make the navbar fixed at the top */
+    top: 0; /* Ensure navbar sticks to the top */
+    width: 100%; /* Full width */
+    z-index: 10; /* Higher than other content */
+  }
+
   nav ul {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: -50px;
+    /* top: -50px; */
     left: -45px;
     width: 100%;
     background-color: #141414;
@@ -380,7 +406,11 @@ form button:hover {
   }
 
   nav.active ul {
-    display: flex;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    display: flex; /* This shows the menu */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -404,13 +434,4 @@ form button:hover {
   .project-links {
     width: 100%;
   }
-}
-
-.menu-toggle {
-  display: none;
-  position: absolute;
-  top: -80px;
-  right: 1rem;
-  font-size: 2rem;
-  cursor: pointer;
 }
